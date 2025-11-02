@@ -3,31 +3,18 @@
 
 int main() {
 
-    char character,bool_val;
+    char character;
     
     //taking values
-    printf("Enter a character :");
+    printf("Enter a alphabet :");
     scanf("%c",&character);
     
     //logic
     if((character>='A' && character<='Z') || (character>='a' && character<='z')){
-            if(character=='A' | character=='a'){
+            if((character=='A' || character=='a')||(character=='E' | character=='e')||(character=='I' | character=='i')||(character=='O' | character=='o')||(character=='U' | character=='u')){
                 printf("%c is a vowel",character);
-                bool_val=true;
-            }else if(character=='E' | character=='e'){
-                printf("%c is a vowel",character);
-                bool_val=true;
-            }else if(character=='I' | character=='i'){
-                printf("%c is a vowel",character);
-                bool_val=true;
-            }else if(character=='O' | character=='o'){
-                printf("%c is a vowel",character);
-                bool_val=true;
-            }else if(character=='U' | character=='u'){
-                printf("%c is a vowel",character);
-                bool_val=true;
             }else{
-                printf("%c is not a vowel but a consonent");
+                printf("%c is not a vowel but a consonent);
             }
         
         
@@ -36,4 +23,5 @@ int main() {
             printf("Entered character is not an alphabet.Kindly recheck your input");
         }
 return 0;
+
 }
